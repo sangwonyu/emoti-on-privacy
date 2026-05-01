@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- 따뜻한 글로우 -->
+    <radialGradient id="glow" cx="50%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#FFF5E6" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#F7BAAC" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#F7BAAC" stop-opacity="0"/>
+    </radialGradient>
+    <!-- 불꽃 그라데이션 -->
+    <linearGradient id="flame" x1="0.5" y1="1" x2="0.5" y2="0">
+      <stop offset="0%" stop-color="#F7BAAC"/>
+      <stop offset="50%" stop-color="#FFCAB0"/>
+      <stop offset="100%" stop-color="#FFF0E0"/>
+    </linearGradient>
+    <!-- 내부 밝은 빛 -->
+    <radialGradient id="innerLight" cx="50%" cy="55%" r="35%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- 글로우 배경 -->
+  <circle cx="32" cy="34" r="26" fill="url(#glow)"/>
+  <!-- 메인 불꽃 형태: 부드러운 물방울 뒤집은 모양 -->
+  <path d="
+    M 32 10
+    C 32 10, 46 26, 46 36
+    C 46 44, 40 50, 32 50
+    C 24 50, 18 44, 18 36
+    C 18 26, 32 10, 32 10
+    Z
+  " fill="url(#flame)"/>
+  <!-- 내부 빛 -->
+  <ellipse cx="32" cy="38" rx="8" ry="7" fill="url(#innerLight)"/>
+  <!-- 작은 하이라이트 -->
+  <ellipse cx="27" cy="30" rx="3" ry="4" fill="white" opacity="0.5" transform="rotate(-15, 27, 30)"/>
+</svg>

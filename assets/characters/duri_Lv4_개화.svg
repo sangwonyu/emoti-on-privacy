@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="160" viewBox="0 0 140 160">
+  <defs>
+    <radialGradient id="bodyGrad_3_4" cx="38%" cy="32%" r="60%">
+      <stop offset="0%" stop-color="white"/>
+      <stop offset="100%" stop-color="rgb(201,193,240)"/>
+    </radialGradient>
+    <radialGradient id="bumpGrad_3_4" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="white"/>
+      <stop offset="100%" stop-color="rgb(204,198,236)"/>
+    </radialGradient>
+    <filter id="glow_3_4">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <g transform="translate(22.0, 36.5)">
+  <ellipse cx="48.0" cy="55" rx="59" ry="51" fill="#9B8FD4" opacity="0.28" filter="url(#glow_3_4)"/>
+  <ellipse cx="48.0" cy="52" rx="62" ry="53" fill="none" stroke="#9B8FD4" stroke-width="1.2" opacity="0.2"/>
+  <ellipse cx="25.0" cy="9.0" rx="15.0" ry="13.0" fill="url(#bumpGrad_3_4)" opacity="1.00"/>
+  <ellipse cx="58.0" cy="6.0" rx="18.0" ry="14.0" fill="url(#bumpGrad_3_4)" opacity="1.00"/>
+  <ellipse cx="78.0" cy="10.0" rx="12.0" ry="10.0" fill="url(#bumpGrad_3_4)" opacity="1.00"/>
+  <ellipse cx="7.0" cy="23.0" rx="11.0" ry="10.0" fill="url(#bumpGrad_3_4)" opacity="1.00"/>
+  <ellipse cx="90.0" cy="22.0" rx="10.0" ry="9.0" fill="url(#bumpGrad_3_4)" opacity="1.00"/>
+  <ellipse cx="48" cy="47" rx="46" ry="39" fill="url(#bodyGrad_3_4)" opacity="1.00"/>
+<ellipse cx="27.6" cy="34.84" rx="6.0" ry="5.0" fill="#4A3A7A"/>
+<ellipse cx="26.400000000000002" cy="33.64" rx="2.4000000000000004" ry="2.4" fill="rgba(255,255,255,0.6)"/>
+<ellipse cx="69.84" cy="34.84" rx="6.0" ry="5.0" fill="#4A3A7A"/>
+<ellipse cx="68.64" cy="33.64" rx="2.4000000000000004" ry="2.4" fill="rgba(255,255,255,0.6)"/>
+  <ellipse cx="22.5" cy="50.9" rx="7.9" ry="4.7" fill="#9B8FD4" opacity="0.22"/>
+  <ellipse cx="69.1" cy="50.9" rx="7.9" ry="4.7" fill="#9B8FD4" opacity="0.22"/>
+<path d="M41.0,54.8 Q48.0,64.8 55.0,54.8" fill="none" stroke="#4A3A7A" stroke-width="2" stroke-linecap="round"/>
+<path d="M48.0,10.0 L45.6,3.2 L38.5,3.1 L44.2,-1.2 L42.1,-8.1 L48.0,-4.0 L53.9,-8.1 L51.8,-1.2 L57.5,3.1 L50.4,3.2 Z" fill="#FFD93D"/>
+<text x="20" y="4" font-size="8" opacity="0.7">✨</text>
+<text x="66" y="6" font-size="7" opacity="0.6">✨</text>
+  <ellipse cx="48" cy="90" rx="35.2" ry="5" fill="rgb(201,193,240)" opacity="0.35"/>
+  </g>
+</svg>

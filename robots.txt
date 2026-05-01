@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sangwonyu.github.io/emoti-on-privacy/sitemap.xml

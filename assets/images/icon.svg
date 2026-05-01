@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7BAAC"/>
+      <stop offset="55%" stop-color="#E4C4E0"/>
+      <stop offset="100%" stop-color="#CFC7E8"/>
+    </linearGradient>
+    <radialGradient id="bodyGrad" cx="35%" cy="28%" r="68%">
+      <stop offset="0%" stop-color="white"/>
+      <stop offset="45%" stop-color="#FFF4F7"/>
+      <stop offset="100%" stop-color="rgb(255,179,198)"/>
+    </radialGradient>
+    <radialGradient id="bumpGrad" cx="38%" cy="32%" r="62%">
+      <stop offset="0%" stop-color="white"/>
+      <stop offset="100%" stop-color="rgb(255,214,228)"/>
+    </radialGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="moniShadow" x="-20%" y="-10%" width="140%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#C06858" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <circle cx="160" cy="180" r="80" fill="#FFFFFF" opacity="0.12"/>
+  <circle cx="880" cy="150" r="55" fill="#FFFFFF" opacity="0.10"/>
+  <circle cx="850" cy="860" r="100" fill="#FFFFFF" opacity="0.08"/>
+  <circle cx="130" cy="830" r="45" fill="#FFFFFF" opacity="0.10"/>
+
+  <g filter="url(#moniShadow)" transform="translate(512, 400) scale(2.9)">
+    <ellipse cx="0" cy="8" rx="88" ry="80" fill="#FF8FAB" opacity="0.18" filter="url(#glow)"/>
+    <ellipse cx="0" cy="-84" rx="40" ry="34" fill="url(#bumpGrad)"/>
+    <ellipse cx="0" cy="8" rx="85" ry="78" fill="url(#bodyGrad)"/>
+    <ellipse cx="-32" cy="-36" rx="26" ry="17" fill="rgba(255,255,255,0.55)" transform="rotate(-20 -32 -36)"/>
+    <ellipse cx="-20" cy="-2" rx="8.5" ry="7.5" fill="#3D2020"/>
+    <ellipse cx="-22.5" cy="-4.5" rx="3" ry="2.5" fill="rgba(255,255,255,0.65)"/>
+    <ellipse cx="20" cy="-2" rx="8.5" ry="7.5" fill="#3D2020"/>
+    <ellipse cx="17.5" cy="-4.5" rx="3" ry="2.5" fill="rgba(255,255,255,0.65)"/>
+    <path d="M-12,16 Q0,26 12,16" stroke="#3D2020" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <ellipse cx="-40" cy="12" rx="15" ry="9" fill="#FF6B8B" opacity="0.14"/>
+    <ellipse cx="40" cy="12" rx="15" ry="9" fill="#FF6B8B" opacity="0.14"/>
+  </g>
+
+  <!-- 텍스트는 Pillow에서 렌더링 -->
+</svg>

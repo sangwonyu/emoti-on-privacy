@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- 글로우 -->
+    <radialGradient id="dropGlow" cx="50%" cy="55%" r="50%">
+      <stop offset="0%" stop-color="#FFE8DC" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#F7BAAC" stop-opacity="0"/>
+    </radialGradient>
+    <!-- 물방울 메인 -->
+    <linearGradient id="dropMain" x1="0.3" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#FFF3EA"/>
+      <stop offset="35%" stop-color="#FFCAB0"/>
+      <stop offset="70%" stop-color="#F7BAAC"/>
+      <stop offset="100%" stop-color="#E8A99A"/>
+    </linearGradient>
+    <!-- 내부 빛 -->
+    <radialGradient id="dropInner" cx="40%" cy="45%" r="30%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <!-- 하트 글로우 -->
+    <radialGradient id="heartGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD4C4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#F7BAAC" stop-opacity="0.3"/>
+    </radialGradient>
+  </defs>
+  <!-- 글로우 배경 -->
+  <circle cx="32" cy="34" r="26" fill="url(#dropGlow)"/>
+  <!-- 메인 물방울 (둥글고 통통한) -->
+  <path d="
+    M 32 11
+    C 32 11, 20 24, 18 33
+    C 16 42, 22 51, 32 51
+    C 42 51, 48 42, 46 33
+    C 44 24, 32 11, 32 11
+    Z
+  " fill="url(#dropMain)"/>
+  <!-- 내부 빛 -->
+  <ellipse cx="30" cy="35" rx="8" ry="9" fill="url(#dropInner)"/>
+  <!-- 물방울 안의 작은 하트 -->
+  <path d="
+    M 32 33
+    C 32 31, 29 29, 27 31
+    C 25 33, 27 36, 32 39
+    C 37 36, 39 33, 37 31
+    C 35 29, 32 31, 32 33
+    Z
+  " fill="url(#heartGlow)" opacity="0.7"/>
+  <!-- 하이라이트 -->
+  <ellipse cx="27" cy="28" rx="3" ry="4.5" fill="white" opacity="0.55" transform="rotate(-10, 27, 28)"/>
+  <!-- 작은 반짝 -->
+  <circle cx="38" cy="24" r="1.2" fill="white" opacity="0.6"/>
+</svg>
