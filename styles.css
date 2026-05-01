@@ -1117,45 +1117,16 @@ h1, h2, h3, h4, h5, h6 {
   text-underline-offset: 2px;
 }
 
-/* ── 20. 위기 상담 박스 ─────────────────────────────────── */
-.crisis-box {
-  background: var(--color-accent-50);
-  border: 1.5px solid var(--color-accent-100);
-  border-radius: var(--radius-xl);
-  padding: var(--space-xl);
-  max-width: 760px;
-  margin-inline: auto;
-}
-
-.crisis-box__heading {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--color-accent-deeper);
-  margin-bottom: var(--space-md);
-}
-
-.crisis-box__lines {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-  margin-bottom: var(--space-md);
-}
-
-.crisis-box__line {
-  font-size: 0.9375rem;
-  color: var(--color-text-secondary);
-}
-
-.crisis-box__line strong {
-  color: var(--color-text-primary);
-}
-
-.crisis-box__disclaimer {
+/* ── 20. 법적 면책 안내 ────────────────────────────────── */
+.legal-disclaimer {
   font-size: 0.8125rem;
   color: var(--color-text-secondary);
   line-height: 1.7;
-  border-top: 1px solid var(--color-accent-100);
-  padding-top: var(--space-md);
+  background: var(--color-accent-50);
+  border: 1.5px solid var(--color-accent-100);
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  margin-top: var(--space-xl);
 }
 
 /* ── 21. 푸터 ───────────────────────────────────────────── */
