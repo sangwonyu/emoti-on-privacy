@@ -8,6 +8,7 @@ Emoti:on 앱의 GitHub Pages 정적 웹사이트입니다.
 - `index.html` — 메인 랜딩 페이지 (앱 소개, 캐릭터, 기능, FAQ, 다운로드 CTA)
 - `privacy.html` — 개인정보 처리방침
 - `support.html` — 고객 지원 및 자주 묻는 질문
+- `delete-account.html` — 계정 삭제 안내(앱 내 탈퇴, 이메일 요청, 처리 기간)
 
 ## 라이브 URL
 
